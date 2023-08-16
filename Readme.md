@@ -1,4 +1,4 @@
-# JS Simple Text Editor
+# Simple JS Text Editor
 A simple JavaScript text editor application.  
 
 __Technologies Used__  
