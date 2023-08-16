@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TextEditor</title>
+    <!-- TailwindCSS and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4400/4400968.png" type="image/x-icon">
+</head>
+
+<body class="max-w-6xl mx-auto bg-blue-200 mt-12 py-5">
+    <!-- Header: START -->
+    <header class="mb-5">
+        <h1 class="text-center text-4xl font-bold">JS Text Editor</h1>
+    </header>
+    <!-- Header: END -->
+
+    <!-- Main: START -->
+    <main class="border-2 border-black max-w-5xl mx-auto">
+        <!-- Style Selectors -->
+        <section class="m-5">
+            <div class="flex justify-between items-center">
+                <!-- Text Styles -->
+                <div class="space-x-1">
+                    <span id="text-bold" class="font-bold cursor-pointer p-1">B</span>
+                    <span id="text-italic" class="italic cursor-pointer p-1">I</span>
+                    <span id="text-underline" class="underline cursor-pointer p-1">U</span>
+                </div>
+                <!-- Text Styles -->
+                <!-- Text Alignments -->
+                <div class="space-x-1">
+                    <span id="align-left" class="p-1 cursor-pointer"><i class="fa-solid fa-align-left"></i></span>
+                    <span id="align-center" class="p-1 cursor-pointer"><i class="fa-solid fa-align-center"></i></span>
+                    <span id="align-justify" class="p-1 cursor-pointer"><i class="fa-solid fa-align-justify"></i></span>
+                    <span id="align-right" class="p-1 cursor-pointer"><i class="fa-solid fa-align-right"></i></span>
+                </div>
+                <!-- Text Alignments -->
+                <!-- Font Size and Color -->
+                <div class="space-x-1">
+                    <input id="font-size" class="font-bold w-12 focus:outline-none px-1 py-[2px] rounded" type="number"
+                        value="17">
+                    <label for="font-size" class="font-medium">aA</label>
+                    <input id="font-color" type="color" value="#000">
+                </div>
+                <!-- Font Size and Color -->
+            </div>
+            <hr class="mt-5 bg-black h-[3px]">
+        </section>
+        <!-- Style Selectors -->
+
+        <!-- Text Area -->
+        <section class="m-5">
+            <textarea id="text-area"
+                class="textarea rounded-none w-full h-72 focus:outline-none p-5 resize-none"></textarea>
+        </section>
+        <!-- Text Area -->
+    </main>
+    <!-- Main: END -->
+
+    <!-- Scripts -->
+    <script src="js/functions.js"></script>
+    <script src="js/keyboard.js"></script>
+    <!-- Scripts -->
+</body>
+
+</html>
